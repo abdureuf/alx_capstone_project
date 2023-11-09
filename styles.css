@@ -1,0 +1,453 @@
+/* Global Styles */
+body {
+  
+    font-family: Arial, sans-serif;
+    /* background-image: url(images/abdure.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+  
+    
+    
+  }
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  header {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    padding: 20px;
+     background-image: url(images/abdure.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5989bf;
+    
+    
+  }
+  
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+   
+  }
+  
+  .portifolio{
+    /* margin-left: 200px; */
+    /* width: 200px; */
+    font-size: 20px;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav-icon span,
+  .nav-icon span:before,
+  .nav-icon span:after {
+    position: absolute;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-icon span:before,
+  .nav-icon span:after {
+    content: "";
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-icon span:before {
+    top: -8px;
+  }
+  
+  .nav-icon span:after {
+    top: 8px;
+  }
+  
+  .nav-toggle:checked ~ .nav-icon span {
+    background-color: transparent;
+  }
+  
+  .nav-toggle:checked ~ .nav-icon span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-icon span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    
+  }
+  
+  .nav-links li {
+    margin-left: 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6565;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-top: 200px;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+  
+  .hero p {
+    font-size: 12px;
+    margin:30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff6565;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 200px;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn:active {
+    opacity: 0.9;
+    transform: translateY(2px);
+  }
+  
+  .pra {
+    margin: 0px 150px;
+  }
+  /*1 styles */
+  /* "About-me..." section Styles */
+.About-me {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: start;
+  }
+  
+  .About-me h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .services-container {
+    display:grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+      margin-top: 30px;
+  }
+  
+  .service {
+   padding: 10px;
+  }
+  
+  .service h3 {
+    
+    color:rgb(25, 25, 151);
+  
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+  }
+  /* 2 styles */
+  .Skills {
+    /* background-color: #fff; */
+    padding: 50px;
+    text-align: center;
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  .Skills-icon {
+    display: grid;
+    justify-content: center;
+    align-items: center; /* Added to vertically center the content */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .bgimg {
+    /* background-image: url(images/pentagone.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+  }
+  
+  .bgimg p {
+    font-size: large;
+  }
+  
+  .Skills-icon .something {
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .Projects{
+    background-color: blue; 
+    padding: 50px;
+    text-align: center;
+    /* background-image: url(images/headphones_hero_2.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  
+  }
+  .projecs-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .project-no {
+    margin: 10px;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+  /* 3 styles */
+  /* Contact Us section Styles */
+.contact-us {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-us {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form button {
+    background-color: #ff6565;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover,
+  .contact-form button:active {
+    opacity: 0.9;
+  }
+  .contact-me li{
+   
+      list-style: none;
+      margin-top: 20px;
+  
+  }
+  /* 4 styles */
+  /* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .footer-links li {
+    margin-left: 15px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+  
+  .footer-text {
+    font-size: 12px;
+  }
+  /* Animation Styles */
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Hover Animation Styles */
+  .About-me .service:hover {
+    animation: scaleAnimation 0.5s infinite;
+  }
+  
+  .About-me .service:hover i {
+    animation: rotateAnimation 1s infinite;
+  }
+  
+  .About-me .service {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+  }
+  
+  .About-me .service:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .About-me .service:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .About-me .service:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .About-me .service:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  /* Animation Styles */
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes bounceAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover Animation Styles */
+  .Skills .bgimg:hover {
+    animation: scaleAnimation 0.5s infinite;
+  }
+  
+  .Skills .bgimg:hover p {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .Skills .bgimg:hover p.something {
+    animation: rotateAnimation 1s infinite;
+  }
+  
+  .Skills .bgimg:hover p.something:hover {
+    animation: bounceAnimation 0.5s infinite;
+  }
+  /* 5 styles */
+  
